@@ -1,0 +1,130 @@
+@font-face{
+	font-family: 'museo';
+	src: url(../font/museo.otf);
+}
+
+nav{
+	font-family: 'museo';
+	font-weight: bold;
+}
+	nav.absolute-navbar{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		background-color: #000000;
+		text-align: left;
+		height: 45px;
+		line-height: 45px;
+		border-radius: 0px;
+		color: #ffffff;
+		/*float: left;*/
+	}
+		nav.absolute-navbar div{
+			/*float: left;*/
+		}
+
+			nav .sm-pad{
+				padding: 0px 12px;
+			}
+
+			nav .md-pad{
+				padding: 0px 30px;
+			}
+	.has-absolute-navbar{
+		margin-top: 45px;
+	}
+
+	nav.main-menu{
+		text-align: center;
+		padding: 20px 0px;
+		margin-bottom: 0px;
+	}
+		.main-menu-wrapp{
+			max-width: 1090px;
+			height: 35px;
+			line-height: 35px;
+			margin-left: auto;
+			margin-right: auto;
+			color: #000000;
+		}
+			.navbar-nav-costum{
+				display: table;
+			    margin-left: auto;
+			    margin-right: auto;
+			}
+			.navbar-nav-costum>li{
+				float: left;
+			}
+			.navbar-nav-costum>li>a{
+				color: #000000;
+				line-height: 25px;
+    			padding: 5px 0px 1px 0px;
+    			margin-left: 20px;
+			}
+			.navbar-nav-costum>li:first-child>a{
+				margin-left: 0px;
+			}
+			.navbar-nav-costum>li>a:focus, .navbar-nav-costum>li>a:hover{
+				background: none;
+				border-bottom: 2px solid #000000;
+			}
+
+			.navbar-form-costum{
+				margin-left: 25px;
+			}
+.main{
+	width: 100%;
+	text-align: center;
+}
+.rowOne{
+	max-width: 1090px;
+	margin: auto;
+}
+	.main-rowOne{
+		position: relative;
+		margin-bottom: 90px;
+	}
+	.main-rowOne .headline-text{
+		position: absolute;
+		width: 400px;
+		margin-left: -200px;
+		left: 50%;
+		font-size: 3.2em;
+		top: 30%;
+		color: #ffffff;
+	}
+	.main-rowOne .headline-button{
+		position: absolute;
+		width: 200px;
+		margin-left: -100px;
+		left: 50%;
+		top: 60%;
+		padding: 10px 15px;
+		border: 3px solid #b8a454;
+		border-radius: 3px;
+		color: #b8a454;
+	}
+.rowTwo{
+
+}
+
+/*general costum style*/
+.fl-left{
+	float: left;
+}
+
+.fl-right{
+	float: right;
+}
+
+.button-nav:hover{
+	background-color: #303030;
+}
+
+.full-width{
+	width: 100%;
+}
+
+.max-limit-width{
+	max-width: 1366px;
+}

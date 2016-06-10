@@ -1,29 +1,21 @@
 <?php get_header(); ?>
 
-<div class="main container">
-	<div class="col-md-1"></div>
-	<div class="col-md-10 col-sm-12">
-	<?php
-		if (have_posts()):
-			while (have_posts()): the_post(); ?>
-				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-				<?php echo get_the_excerpt(); ?> <a href="<?php the_permalink(); ?>">Read more...</a>
-
-				<div class="info-meta">
-					<a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a>
-				<?php
-				the_date();
-				the_category(',');?>
-				</div>
-				<?php
-			endwhile;
-		else:
-			echo "empty post"; 
-		endif;
-	?>
+<div class="main">
+	<div class="rowOne">
+		<div class="main-rowOne">
+			<div class="lg-img">
+				<img src="http://localhost/woopress/wp-content/uploads/2016/06/hammerlocks_home-rev_03.jpg" alt="">
+			</div>
+			<div class="headline-text">OUT NOW <br> AGE OF WIZARD</div>
+			<div class="headline-button">SHOP NOW</div>
+		</div>
 	</div>
-	<div class="col-md-1"></div>
-
+	<div class="rowTwo">
+		<img class="full-width max-limit-width" src="http://localhost/woopress/wp-content/uploads/2016/06/hammerlocks_home-rev_07-1.jpg" alt="">
+		<div class="headline-title">ABOUT US</div>
+		<div class="headline-text">Hammerlocks adalah sebuah clothing dari Solo - indonesia, didirikan pada 2012. Dari passion kami terhadap dunia seni, datang sebuah ide untuk menggabungkan seni ke dalam fashion. Kami percaya, jika fashion merupakan suatu hal yang melekat dalam kehidupan manusia, mereka harus memiliki nilai artistik..</div>
+		<div class="headline-button">READ MORE/div>
+	</div>
 </div>
 
 <?php get_footer(); ?>
